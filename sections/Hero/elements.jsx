@@ -51,6 +51,8 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
   display: flex;
   flex-wrap: wrap;
   padding: 0 16rem;
+  background: url(background.png) no-repeat top left;
+  background-size: contain;
 
   @media (max-width: 1280px) {
     padding: 0 .5rem;      
@@ -61,9 +63,7 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
   max-height: 65rem;
   max-width: 100%;
   height: 100%;
-  flex-basis: 40%;
-  background: url(background.png) no-repeat center center;
-  background-size: 100% 100%;
+  flex-basis: 42%;
 
   @media (max-width: 1280px) {
     flex-basis: 100%;
@@ -75,12 +75,11 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
 export const StyledCardsContainer = styled(({ ...props}) => <div {...props} />)`
   width: 100%;
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 58%;
   align-content: space-between;
   flex-wrap: wrap;
-  margin: 1.5rem 0;
 
   @media (max-width: 1280px) {
-    flex-basis: 100%;         
+    flex-basis: 100%; 
   }
 `;  
