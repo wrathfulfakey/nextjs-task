@@ -7,6 +7,7 @@ export const StyledCardTitle = styled(({ ...props }) => <SectionAnchor {...props
     font-size: 1.15rem;
     font-weight: 700;
     line-height: 1.6;
+    color: inherit;
 
     &:visited {
         color: inherit;
