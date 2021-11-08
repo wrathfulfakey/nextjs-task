@@ -1,9 +1,6 @@
 import Image from "next/image";
-
 import { Card } from "../../collections/Card/Card";
-
 import { StyledCardsContainer } from "./elements";
-
 import {
   StyledTitleContainer,
   StyledContainer,

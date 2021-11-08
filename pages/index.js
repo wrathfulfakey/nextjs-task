@@ -1,27 +1,50 @@
 import { Hero } from "../sections";
 
 const heroProps = {
-  image: { src: "/img/video.png", alt: "", width: 1000, height: 1680 },
+  image: { 
+    src: "/img/video.png", 
+    alt: "", 
+    width: 658, 
+    height: 1050
+  },
   title: "Managed agency selection",
   subtitle: "Strengthen your onboarding process",
-  card1: { title: "Brief",
-           content:  "Complete brief writing or simple guidance on what to include, we,ve got you covered.",  
-           image: { src: "/img/brief.png", alt: "card1", width: 60, height: 60  },
-           color: "#F8F8F8",
-           width: "70",
-          },
-  card2: { title: "Search",
-           content:  "In-depth agency search covering: criteria matching, door knocking and due-dilligence vetting.",  
-           image: { src: "/img/search.png", alt: "card2", width: 60, height: 60  },
-           color: "#F0F0F0",
-           width: "75",
-          },   
-  card3: { title: "Pitch",
-           content:  "Comprehensive: pitch management, including camms, diary management and pitch hosting.",  
-           image: { src: "/img/table.png", alt: "card", width: 60, height: 60  },
-           color: "#E0E0E0",
-           width: "80",
-          },
+  card1: { 
+    title: "Brief",
+    content:  "Complete <b>brief writing or simple guidance</b> on what to include, we,ve got you covered.",
+    image: { 
+      src: "/img/brief.png", 
+      alt: "card1", 
+      width: 60, 
+      height: 60  
+    },
+    color: "#F8F8F8",
+    width: "70",
+  },
+  card2: { 
+    title: "Search",
+    content:  "In-depth agency search covering: <b>criteria matching</b>, door knocking and due-dilligence vetting.",  
+    image: { 
+      src: "/img/search.png", 
+      alt: "card2", 
+      width: 60, 
+      height: 60  
+    },
+    color: "#F0F0F0",
+    width: "75",
+  },   
+  card3: { 
+    title: "Pitch",
+    content:  "Comprehensive: <b>pitch management</b>, including camms, diary management and pitch hosting.",  
+    image: { 
+      src: "/img/table.png", 
+      alt: "card", 
+      width: 60, 
+      height: 60  
+    },
+    color: "#E0E0E0",
+    width: "80",
+  },
 };
 
 export default function Home() {

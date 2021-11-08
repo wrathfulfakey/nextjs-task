@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ReactHtmlParser from "react-html-parser";
 
 import { 
     StyledCardTitle, 
@@ -9,7 +10,7 @@ import {
 } from "./elements";
 
 export const Card = ({title, content, image, width, color, ...props}) => {
-    return(
+    return (
     <StyledCardContainer width={width} color={color}>
         <StyledCardImageContainer>
           <Image src={image.src} alt="card image" width={image.width} height={image.height} />
@@ -17,8 +18,8 @@ export const Card = ({title, content, image, width, color, ...props}) => {
 
         <StyledCardContentContainer>
            <StyledCardTitle href="#">{title}</StyledCardTitle>
-
-           <StyledCardContent>{content}</StyledCardContent>
+            
+            <StyledCardContent>{ReactHtmlParser(content)}</StyledCardContent>
         </StyledCardContentContainer>
     </StyledCardContainer>
     )

@@ -12,7 +12,7 @@ export const StyledCardTitle = styled(({ ...props }) => <SectionAnchor {...props
         color: inherit;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         font-size: 1rem;
     }
 `;
@@ -21,10 +21,9 @@ export const StyledCardContainer = styled(({ width, color, ...props }) => <Secti
     display: flex;
     align-items: center;
     margin: 2rem 4rem;
-    padding: .5rem 0;
+    padding: 1rem 0;
     background: ${({color}) => color};
     width: ${({width}) => width}%;
-    min-height: 150px;
     transition: all .3s ease;
     border-radius: .5rem;
     border: 3px solid transparent;
@@ -38,8 +37,9 @@ export const StyledCardContainer = styled(({ width, color, ...props }) => <Secti
         color: blue;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         margin: .75rem 1.2rem;
+        padding: 1rem 0;
     }
 `;
 
@@ -48,7 +48,11 @@ export const StyledCardImageContainer = styled(({ ...props }) => <div {...props}
     text-align: center;
 
     @media (max-width: 1024px) {
-        flex-basis: 15%;   
+        & img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+        flex-basis: 25%;   
     }
 `;
 
@@ -56,9 +60,9 @@ export const StyledCardContent = styled(({ ...props }) => <SectionParagraph {...
     padding-right: 2.5rem;
     margin: 0;
 
-    @media (max-width: 768px) {
-        padding: 0 .1rem;
+    @media (max-width: 1024px) {
         font-size: .8rem;
+        padding-right: 1rem;
     }
 `;
 
@@ -66,6 +70,6 @@ export const StyledCardContentContainer = styled(({ ...props }) => <div {...prop
     flex-basis: 70%;
 
     @media (max-width: 1024px) {
-        flex-basis: 85%;
+        flex-basis: 75%;
     }
 `;
