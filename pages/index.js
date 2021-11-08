@@ -1,6 +1,6 @@
-import { Hero } from "../sections";
+import { Hero, Management } from "../sections";
 
-const heroProps = {
+const managementProps = {
   image: { 
     src: "/img/video.png", 
     alt: "", 
@@ -59,8 +59,9 @@ export default function Home() {
         />
       </head>
       <div>
-        <Hero {...heroProps} />
+        {/* <Hero {...heroProps} /> */}
         {/** Other sections */}
+        {<Management { ...managementProps } />}
       </div>
     </>
   );
