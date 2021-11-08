@@ -9,7 +9,7 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
 
 export const StyledSectionAnchor = styled((props) => <SectionAnchor {...props} />) `
   &:hover {
-    color: blue;
+    color: #006EFD;
     text-decoration: underline;
   }
 `;
@@ -50,6 +50,7 @@ export const StyledTitleContainer = styled(({ ...props }) => <div {...props} />)
 export const StyledContentContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 0 16rem;
   background: url(background.png) no-repeat top left;
   background-size: contain;
@@ -64,11 +65,10 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
 `;
   
   export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
-  flex-basis: 42%;
-  align-self: center;
+  flex-basis: 50%;
+  max-width: 328px;
 
   @media (max-width: 1024px) {
-    max-width: 40%;
     margin: 0 auto;
     flex-basis: 100%;
   }
@@ -77,7 +77,8 @@ export const StyledContentContainer = styled(({ ...props }) => <div {...props} /
 export const StyledCardsContainer = styled(({ ...props}) => <div {...props} />)`
   width: 100%;
   display: flex;
-  flex-basis: 58%;
+  flex-basis: 50%;
+  margin: 1rem 0;
   align-content: space-between;
   flex-wrap: wrap;
 

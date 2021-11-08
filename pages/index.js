@@ -1,11 +1,22 @@
 import { Hero, Management } from "../sections";
 
+const heroProps = {
+  image: { 
+    src: "/img/video.png", 
+    alt: "", 
+    width: 329,
+    height: 525
+  },
+  title: "Managed agency selection",
+  subtitle: "Strengthen your onboarding process",
+}
+
 const managementProps = {
   image: { 
     src: "/img/video.png", 
     alt: "", 
-    width: 658, 
-    height: 1050
+    width: 329,
+    height: 525
   },
   title: "Managed agency selection",
   subtitle: "Strengthen your onboarding process",
@@ -19,11 +30,11 @@ const managementProps = {
       height: 60  
     },
     color: "#F8F8F8",
-    width: "70",
+    width: "90",
   },
   card2: { 
     title: "Search",
-    content:  "In-depth agency search covering: <b>criteria matching</b>, door knocking and due-dilligence vetting.",  
+    content:  "In-depth agency search covering; <b>criteria matching</b>, door knocking and due-dilligence vetting.",  
     image: { 
       src: "/img/search.png", 
       alt: "card2", 
@@ -31,7 +42,7 @@ const managementProps = {
       height: 60  
     },
     color: "#F0F0F0",
-    width: "75",
+    width: "95",
   },   
   card3: { 
     title: "Pitch",
@@ -43,7 +54,7 @@ const managementProps = {
       height: 60  
     },
     color: "#E0E0E0",
-    width: "80",
+    width: "100",
   },
 };
 
@@ -59,7 +70,7 @@ export default function Home() {
         />
       </head>
       <div>
-        {/* <Hero {...heroProps} /> */}
+        <Hero {...heroProps} />
         {/** Other sections */}
         {<Management { ...managementProps } />}
       </div>
